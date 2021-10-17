@@ -16,7 +16,7 @@ const html = tours.map((tour) => {
             </p>
         </div>
         <div class="item-main-middle">
-            <ion-icon name="location-outline"></ion-icon>
+            <ion-icon name="location-outline" class="location-icon"></ion-icon>
             <h3>${tour.name}</h3>
         </div>
         <div class="item-main-bottom">

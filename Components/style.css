@@ -248,7 +248,7 @@
     max-width: 750px;
     word-break: break-word;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 0 50px;
     margin-bottom: 50px;
 }
@@ -264,25 +264,31 @@
 .footer-top .form input,
 .footer-top .form button {
     height: 70px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .footer-top .form input {
-    width: calc(80% - 50px);
+    width: 50%;
     padding: 20px 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     outline: none;
     border: 1px solid black;
+    border-right: none;
 }
 
 .footer-top .form button {
-    width: calc(30% - 50px);
+    width: 20%;
     padding: 20px 10px;
     background-color: orangered;
     color: white;
     text-transform: uppercase;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 1px solid orangered;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-top .form button:hover {
+    background-color: rgb(38, 35, 57);
 }
