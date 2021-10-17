@@ -97,4 +97,12 @@
     personIcon.onclick = () => {
         dropdownBox.classList.toggle('show');
     };
+    const headerMiddle = header.querySelector('.header-middle');
+    window.onscroll = () => {
+        if (window.scrollY !== 0) {
+            headerMiddle.classList.add('sticky');
+        } else {
+            headerMiddle.classList.remove('sticky');
+        }
+    };
 })();
