@@ -40,6 +40,13 @@
 .header-middle {
     position: relative;
     width: 100%;
+    z-index: 999;
+    background-color: white;
+}
+
+.header-middle.sticky {
+    position: fixed;
+    top: 0;
 }
 
 .header-middle-navbar {
