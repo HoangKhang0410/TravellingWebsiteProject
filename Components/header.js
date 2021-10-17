@@ -18,22 +18,42 @@
 </div>
 </div>
 <div class="header-middle">
-<div class="logo">
-    <img src="../../Public/Images/logo.png" alt="logo" />
+<div class="header-middle-navbar">
+    <div class="logo">
+        <img src="../../Public/Images/logo.png" alt="logo" />
+    </div>
+    <div class="category">
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Destinations</a>
+        <a href="">Tour Package</a>
+        <a href="">Blogs</a>
+        <a href="">Pages</a>
+        <a href="">Contact Us</a>
+    </div>
+    <div class="other">
+        <ion-icon name="search" class="other-icon"></ion-icon>
+        <ion-icon name="person-outline" class="other-icon"></ion-icon>
+        <ion-icon name="menu-outline" class="other-icon"></ion-icon>
+    </div>
 </div>
-<div class="category">
-    <a href="">Home</a>
-    <a href="">About Us</a>
-    <a href="">Destinations</a>
-    <a href="">Tour Package</a>
-    <a href="">Blogs</a>
-    <a href="">Pages</a>
-    <a href="">Contact Us</a>
-</div>
-<div class="other">
-    <ion-icon name="search" class="other-icon"></ion-icon>
-    <ion-icon name="person-outline" class="other-icon"></ion-icon>
-    <ion-icon name="menu-outline" class="other-icon"></ion-icon>
+<div class="dropdown-box">
+    <div class="dropdown-box-item">
+        <ion-icon name="log-in" class="dropdown-box-icon"></ion-icon>
+        <p>Sign in</p>
+    </div>
+    <div class="dropdown-box-item">
+        <ion-icon name="person-circle" class="dropdown-box-icon"></ion-icon>
+        <p>My Account</p>
+    </div>
+    <div class="dropdown-box-item">
+        <ion-icon name="settings" class="dropdown-box-icon"></ion-icon>
+        <p>Setting</p>
+    </div>
+    <div class="dropdown-box-item">
+        <ion-icon name="log-out" class="dropdown-box-icon"></ion-icon>
+        <p>Log Out</p>
+    </div>
 </div>
 </div>
 <div class="header-bottom">
@@ -71,4 +91,10 @@
 </div>
 <div class="overlay"></div>
 </div>`;
+
+    const dropdownBox = document.querySelector('.dropdown-box');
+    const personIcon = document.querySelector('.other .other-icon:nth-child(2)');
+    personIcon.onclick = () => {
+        dropdownBox.classList.toggle('show');
+    };
 })();

@@ -38,13 +38,19 @@
 /* header middle */
 
 .header-middle {
+    position: relative;
+    width: 100%;
+}
+
+.header-middle-navbar {
     display: flex;
     align-items: center;
     padding: 20px 0;
     justify-content: space-around;
+    position: relative;
 }
 
-.header-middle .category a {
+.header-middle-navbar .category a {
     font-size: 1.2rem;
     text-decoration: none;
     color: black;
@@ -52,22 +58,58 @@
     transition: 0.3s ease-in-out;
 }
 
-.header-middle .category a:hover {
+.header-middle-navbar .category a:hover {
     color: orangered;
 }
 
-.header-middle .other {
+.header-middle-navbar .other {
     font-size: 1.5rem;
     color: orangered;
 }
 
-.header-middle .other .other-icon {
+.header-middle-navbar .other .other-icon {
     margin: 0 10px;
     cursor: pointer;
 }
 
-.header-middle .other .other-icon:nth-child(3) {
+.header-middle-navbar .other .other-icon:nth-child(3) {
     display: none;
+}
+/* dropdown box */
+.header-middle .dropdown-box {
+    position: absolute;
+    background-color: white;
+    bottom: -200%;
+    right: 10%;
+    z-index: 2;
+    width: 200px;
+    padding: 10px 10px 0px 10px;
+    font-size: 1rem;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+}
+
+.header-middle .dropdown-box.show {
+    transition: 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.header-middle .dropdown-box .dropdown-box-item {
+    display: flex;
+    margin: 5px 0;
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    font-weight: 500;
+}
+
+.header-middle .dropdown-box .dropdown-box-item .dropdown-box-icon {
+    margin-right: 10px;
+    color: orangered;
+    font-size: 1.3rem;
+}
+.header-middle .dropdown-box .dropdown-box-item:last-child {
+    border: none;
 }
 
 /* header-bottom */
