@@ -2,6 +2,9 @@
     const header = document.querySelector('.header');
 
     header.innerHTML = `<div class="header-top">
+<div id="preloader">
+    <img src="../../Public/Images/preloader.png" alt="preloader" class="preloader-icon">
+</div>
 <div class="phone">
     <ion-icon name="call"></ion-icon>
     <span>+1 763-227-5032</span>
@@ -26,10 +29,10 @@
         <a href="">Home</a>
         <a href="">About Us</a>
         <a href="">Destinations</a>
-        <a href="">Tour Package</a>
+        <a href="../TourPage/index.html">Tour Package</a>
         <a href="">Blogs</a>
-        <a href="">Pages</a>
-        <a href="">Contact Us</a>
+        <a href="../GalleryPage/index.html">Gallery Pages</a>
+        <a href="../ContactPage/index.html">Contact Us</a>
     </div>
     <div class="other">
         <ion-icon name="search" class="other-icon"></ion-icon>
@@ -105,4 +108,14 @@
             headerMiddle.classList.remove('sticky');
         }
     };
+})();
+
+(function () {
+    const preloader = document.querySelector('#preloader');
+    setTimeout(() => {
+        preloader.style.opacity = '0';
+    }, 2000);
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 2500);
 })();
