@@ -40,7 +40,6 @@ const handleImageClick = () => {
     const images = document.querySelectorAll('.body .gallery-grid img');
     const pictureSlide = document.querySelector('.body .picture-slide');
     const closeButton = pictureSlide.querySelector('.slide .item-show .icon-close');
-    const slide = document.querySelector('.body .picture-slide .slide');
     const nextButton = pictureSlide.querySelector('.slide .slide-icon.next');
     const prevButton = pictureSlide.querySelector('.slide .slide-icon.prev');
     const imageShow = pictureSlide.querySelector('.slide .item-show #image-show');
@@ -60,9 +59,7 @@ const handleImageClick = () => {
         pictureSlide.classList.remove('show');
         htmlWrapper.style.overflow = 'auto';
     };
-    // slide.onclick = () => {
-    //     pictureSlide.classList.remove('show');
-    // };
+
     nextButton.onclick = () => {
         const currentSrc = imageShow.getAttribute('src');
         const indexSrc = galleryImage.indexOf(currentSrc);
@@ -72,7 +69,6 @@ const handleImageClick = () => {
         }
         imageShow.src = galleryImage[newIndex];
         imageText.textContent = `${newIndex + 1} of ${galleryImage.length}`;
-        console.log(currentSrc, indexSrc, newIndex);
     };
     prevButton.onclick = () => {
         const currentSrc = imageShow.getAttribute('src');
@@ -83,7 +79,6 @@ const handleImageClick = () => {
         }
         imageShow.src = galleryImage[newIndex];
         imageText.textContent = `${newIndex + 1} of ${galleryImage.length}`;
-        console.log(currentSrc, indexSrc, newIndex);
     };
     imageShow.onclick = () => {
         const currentSrc = imageShow.getAttribute('src');
@@ -94,6 +89,5 @@ const handleImageClick = () => {
         }
         imageShow.src = galleryImage[newIndex];
         imageText.textContent = `${newIndex + 1} of ${galleryImage.length}`;
-        console.log(currentSrc, indexSrc, newIndex);
     };
 };
