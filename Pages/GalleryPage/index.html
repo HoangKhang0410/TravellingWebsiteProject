@@ -11,15 +11,32 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="../../Components/style.css" />
+        <link rel="stylesheet" href="./style.css" />
         <title>Gallery Page</title>
     </head>
     <body>
         <section class="header page"></section>
-        <section class="body"><h1>Hello World</h1></section>
+        <section class="body">
+            <div class="left-panel"></div>
+            <div class="right-panel"></div>
+            <div class="picture-slide">
+                <div class="overlay"></div>
+                <div class="slide">
+                    <ion-icon name="caret-back" class="slide-icon prev"></ion-icon>
+                    <div class="item-show">
+                        <ion-icon name="close" class="icon-close"></ion-icon>
+                        <img src="" alt="" id="image-show" />
+                        <span>hello hello hello hello</span>
+                    </div>
+                    <ion-icon name="caret-forward" class="slide-icon next"></ion-icon>
+                </div>
+            </div>
+        </section>
         <section class="footer"></section>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="../../Components/header.js"></script>
         <script src="../../Components/footer.js"></script>
+        <script type="module" src="./script.js"></script>
     </body>
 </html>
