@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body {
+    padding: 130px;
+}
+/* body top */
+
+.body .detail-info-contact {
+    --columns: 3;
+    --spacing: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+    margin-bottom: 80px;
+}
+
+.body .detail-info-contact .detail-info-item {
+    width: calc(100% / var(--columns) - var(--spacing));
+    margin-left: var(--spacing);
+    box-shadow: 0px 0px 64px rgb(17 17 17 / 10%);
+    border-radius: 10px;
+    display: flex;
+    padding: 25px 20px;
+    position: relative;
+    min-height: 181px;
+    overflow: hidden;
+}
+
+.body .detail-info-contact .detail-info-item::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(48, 79, 71);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transform: rotate(45deg);
+    top: -60px;
+    left: -17%;
+    z-index: -1;
+    transition: 0.3s all;
+}
+
+.body .detail-info-contact .detail-info-item:hover::after {
+    background-color: #ff7f47;
+}
+
+.body .detail-info-contact .detail-info-item .item-info-icon {
+    width: 30%;
+    flex-shrink: 0;
+    font-size: 3.2rem;
+}
+
+.body .detail-info-contact .detail-info-item .item-info-icon .icon {
+    color: white;
+}
+
+.body .detail-info-contact .detail-info-item .item-info-text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.body .detail-info-contact .detail-info-item .item-info-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.body .detail-info-contact .detail-info-item .item-info-text p {
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.body .detail-info-contact .detail-info-item .item-info-text p a {
+    font-size: 1.8rem;
+    color: grey;
+    margin-right: 20px;
+    transition: 0.2s linear;
+}
+
+.body .detail-info-contact .detail-info-item .item-info-text p a:hover {
+    color: orangered;
+}
+
+/* body bottom */
+.body .get-in-touch {
+    display: flex;
+    margin-left: -20px;
+}
+
+.body .get-in-touch .get-in-touch-left,
+.body .get-in-touch .get-in-touch-right {
+    width: calc(50% - 20px);
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.body .get-in-touch .get-in-touch-left h2,
+.body .get-in-touch .get-in-touch-left p,
+.body .get-in-touch .get-in-touch-left .contact-time {
+    margin-bottom: 25px;
+}
+
+.body .get-in-touch .get-in-touch-left h2 {
+    font-size: 1.7rem;
+}
+
+.body .get-in-touch .get-in-touch-left p {
+    color: grey;
+    line-height: 1.7rem;
+}
+
+.body .get-in-touch .get-in-touch-left .contact-time {
+    display: flex;
+}
+
+.body .get-in-touch .get-in-touch-left .contact-time .contact-time-icon {
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+.body .get-in-touch .get-in-touch-left .contact-time .contact-time-detail h3 {
+    color: #ff7f47;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+
+.body .get-in-touch .get-in-touch-left .contact-time .contact-time-detail p {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.body .get-in-touch .get-in-touch-right h2 {
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+}
+
+.body .get-in-touch .get-in-touch-right .form-contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+
+.body .get-in-touch .get-in-touch-right .form-contact .form-input {
+    width: calc(50% - 20px);
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    padding: 15px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    outline: none;
+}
+
+.body .get-in-touch .get-in-touch-right .form-contact .form-textarea {
+    width: 100%;
+    margin-left: 20px;
+    border: 1px solid rgb(209, 209, 209);
+    outline: none;
+    border-radius: 5px;
+    padding: 15px;
+    height: 150px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.body .get-in-touch .get-in-touch-right .form-contact .submit-button {
+    padding: 10px 20px;
+    margin-left: 20px;
+    background-color: #ff7f47;
+    color: white;
+    border-radius: 5px;
+    border: 0px solid black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.body .get-in-touch .get-in-touch-right .form-contact .submit-button:hover {
+    background-color: rgb(48, 79, 71);
+}
