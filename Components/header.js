@@ -30,7 +30,7 @@
         <a href="">About Us</a>
         <a href="">Destinations</a>
         <a href="../TourPage/index.html">Tour Package</a>
-        <a href="">Blogs</a>
+        <a href="../BlogPage/index.html">Blogs</a>
         <a href="../GalleryPage/index.html">Gallery Pages</a>
         <a href="../ContactPage/index.html">Contact Us</a>
     </div>
