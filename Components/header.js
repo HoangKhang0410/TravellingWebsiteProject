@@ -26,7 +26,7 @@
         <img src="../../Public/Images/logo.png" alt="logo" />
     </div>
     <div class="category">
-        <a href="">Home</a>
+        <a href="../HomePage/index.html">Home</a>
         <a href="">About Us</a>
         <a href="">Destinations</a>
         <a href="../TourPage/index.html">Tour Package</a>

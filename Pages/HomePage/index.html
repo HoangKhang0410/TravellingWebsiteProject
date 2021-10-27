@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="../../Components/style.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <section class="header">
+            <div class="header-top">
+                <div class="phone">
+                    <ion-icon name="call"></ion-icon>
+                    <span>+1 763-227-5032</span>
+                </div>
+                <div class="email">
+                    <ion-icon name="mail"></ion-icon>
+                    <span>info@example.com</span>
+                </div>
+                <div class="social">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </div>
+                </div>
+                <div class="header-middle">
+                <div class="header-middle-navbar">
+                    <div class="logo">
+                        <img src="../../Public/Images/logo.png" alt="logo" />
+                    </div>
+                    <div class="category">
+                        <a href="../HomePage/index.html">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">Destinations</a>
+                        <a href="../TourPage/index.html">Tour Package</a>
+                        <a href="">Blogs</a>
+                        <a href="../GalleryPage/index.html">Gallery Pages</a>
+                        <a href="../ContactPage/index.html">Contact Us</a>
+                    </div>
+                    <div class="other">
+                        <ion-icon name="search" class="other-icon"></ion-icon>
+                        <ion-icon name="person-outline" class="other-icon"></ion-icon>
+                        <ion-icon name="menu-outline" class="other-icon"></ion-icon>
+                    </div>
+                </div>
+                <div class="dropdown-box">
+                    <div class="dropdown-box-item">
+                        <ion-icon name="log-in" class="dropdown-box-icon"></ion-icon>
+                        <p>Sign in</p>
+                    </div>
+                    <div class="dropdown-box-item">
+                        <ion-icon name="person-circle" class="dropdown-box-icon"></ion-icon>
+                        <p>My Account</p>
+                    </div>
+                    <div class="dropdown-box-item">
+                        <ion-icon name="settings" class="dropdown-box-icon"></ion-icon>
+                        <p>Setting</p>
+                    </div>
+                    <div class="dropdown-box-item">
+                        <ion-icon name="log-out" class="dropdown-box-icon"></ion-icon>
+                        <p>Log Out</p>
+                    </div>
+                </div>
+                </div>
+                <div class="overlay"></div>
+                </div>
+        </section>
+
+
+        <section class="hero">
+            <div class="slider">
+                <div class="container">
+                    <!-- slide item -->
+                    <div class="slide active">
+                        <div class="info">
+                            <h1>Amazing Tour In Madagascar</h1>
+                            <p>7 Days, 8 Night Tour</p>
+                            <button class="btn-hero">
+                                Book Now
+                            </button>
+                        </div>
+                        <div class="img">
+                            <img src="../../Public/Images/home-slider-1.jpg" alt="home-page-slider-1">
+                        </div>
+                    </div>
+                    <!-- end slide item -->
+                     <!-- slide item -->
+                     <div class="slide">
+                        <div class="info">
+                            <h1>Amazing Tour In Madagascar</h1>
+                            <p>7 Days, 8 Night Tour</p>
+                            <button class="btn-hero">
+                                Book Now
+                            </button>
+                        </div>
+                        <div class="img">
+                        <img src="../../Public/Images/home-slider-2.jpg" alt="home-page-slider-1">
+                        </div>
+                    </div>
+                    <!-- end slide item -->
+
+                     <!-- slide item -->
+                     <div class="slide">
+                        <div class="info">
+                            <h1>Amazing Tour In Madagascar</h1>
+                            <p>7 Days, 8 Night Tour</p>
+                            <button class="btn-hero">
+                                Book Now
+                            </button>
+                        </div>
+                        <div class="img">
+                        <img src="../../Public/Images/home-slider-3.jpg" alt="home-page-slider-1">
+                        </div>
+                    </div>
+                    <!-- end slide item -->
+                </div>
+
+                <button class="slide-controll slide-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <button class="slide-controll slide-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="blur"></div>
+            </div>
+            <div class="form-container">
+                <form class="find-form">
+                    <div class="row-form">
+                        <div class="col-form">
+                            <input type="text" name="whereto" placeholder="Where To ...">
+                        </div>
+                        <div class="col-form calender-form">
+                            <div class="calender-input">
+                                <input type="text" name="check-in" class="input-field" placeholder="dd-mm-yy">
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-form">
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Travel Type</option>
+                                    <option value="1">City Tours</option>
+                                    <option value="2">Vacation Tours</option>
+                                    <option value="3">Couple Tours</option>
+                                    <option value="4">Adventure Tours</option>
+                                    <option value="5">Group Tours</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-form">
+                            <div class="find-btn">
+                                <a href="#"><i class="fas fa-search"></i> Find Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="body">
+                <div class="body-top">
+                    <h4>Choose Your Package</h4>
+                    <h3 class="title">Select Your Best Package For Your Travel</h3>
+                </div>
+                <div class="body-middle"></div>
+            </div>
+
+
+            <div class="destination-area">
+                <div class="container">
+                    <div class="col-title">
+                        <div class="body-top">
+                            <h4>Choose Your Package</h4>
+                            <h3 class="title">Select Your Best Package For Your Travel</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="package-slider-wrap">
+                                <img src="../../Public/Images/item1.png" alt="">
+                                <div class="package-overlay">
+                                    <h5>Paris</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="slider-carousel owl-carousel">
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item1.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item2.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item3.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item4.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item5.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>     
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-9">
+                            <div class="slider-carousel-2 owl-carousel">
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item1.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item2.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item3.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item4.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item5.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>  
+                        <div class="col-3">
+                            <div class="package-slider-wrap">
+                                <img src="../../Public/Images/item1.png" alt="">
+                                <div class="package-overlay">
+                                    <h5>Spain</h5>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="package-slider-wrap">
+                                <img src="../../Public/Images/item1.png" alt="">
+                                <div class="package-overlay">
+                                    <h5>Spain</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="slider-carousel owl-carousel">
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item1.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item2.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item3.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item4.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-thumb">
+                                        <img src="../../Public/Images/item5.png" alt="item">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="card-info">
+                                            <h5><span>$100</span>/Per Person</h5>
+                                        </div>
+                                        <div class="card-destination">
+                                            
+                                            <h3>
+                                                <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                                                Paris
+                                            </h3>
+                                        </div>
+                                        <div class="card-rating">
+                                            <ion-icon name="star" class="rating-star"></ion-icon>
+                                            <p>8K+Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>     
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-area">
+                <div class="container">
+                    <div class="achievement-area-title">
+                        <div class="body-top">
+                            <h4>Why TourX</h4>
+                            <h3 class="title">Why You Are Travel With Tourx</h3>
+                        </div>
+                    </div>
+                    <div class="achievement-cards">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <h3>2000+ Our worldwide guide</h3>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h3>100% trusted travel agency</h3>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-map-marked"></i>
+                            </div>
+                            <h3>10+ year of travel experience</h3>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-wine-glass-alt"></i>
+                            </div>
+                            <h3>90% of our traveller happy</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-area">
+                <div class="container">
+                    <div class="review-title">
+                        <div class="body-top">
+                            <h4>Our Traveller Say</h4>
+                            <h3 class="title">What Oue Traveller Say About Us</h3>
+                        </div>
+                    </div>
+                    <div class="review-slider owl-carousel">
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="../../Public/Images/reviewer-1.png" alt="">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Dina Jems</h3>
+                                <h5>Traveller</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia recusandae modi accusantium voluptate earum ullam.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="../../Public/Images/reviewer-2.png" alt="">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Jahid Hassan</h3>
+                                <h5>Traveller</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia recusandae modi accusantium voluptate earum ullam.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="../../Public/Images/reviewer-3.png" alt="">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Shwan Pull</h3>
+                                <h5>Traveller</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia recusandae modi accusantium voluptate earum ullam.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="../../Public/Images/reviewer-1.png" alt="">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Dina Jems</h3>
+                                <h5>Traveller</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia recusandae modi accusantium voluptate earum ullam.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="../../Public/Images/reviewer-2.png" alt="">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Jahid Hassan</h3>
+                                <h5>Traveller</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia recusandae modi accusantium voluptate earum ullam.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="../../Public/Images/reviewer-3.png" alt="">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Shwan Pull</h3>
+                                <h5>Traveller</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia recusandae modi accusantium voluptate earum ullam.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="../../Public/Images/reviewer-1.png" alt="">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Dina Jems</h3>
+                                <h5>Traveller</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia recusandae modi accusantium voluptate earum ullam.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="../../Public/Images/reviewer-2.png" alt="">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Jahid Hassan</h3>
+                                <h5>Traveller</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia recusandae modi accusantium voluptate earum ullam.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="../../Public/Images/reviewer-3.png" alt="">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Shwan Pull</h3>
+                                <h5>Traveller</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia recusandae modi accusantium voluptate earum ullam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-area">
+                <div class="container">
+                    <div class="feature-title">
+                        <div class="body-top">
+                            <h4>Our Traveller Say</h4>
+                            <h3 class="title">What Oue Traveller Say About Us</h3>
+                        </div>
+                    </div>
+                    <div class="feature-cards">
+                        <div class="feature-card">
+                            <div class="feature-img">
+                                <img src="../../Public/Images/feature-1.png" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <a href="#"class="feature-title">Group Travel Go To Bea Amsterdam</a>
+                                <h5>
+                                    <ion-icon name="star" class="rating-star"></ion-icon>
+                                    <p>8K+Rating</p>
+                                </h5>
+                                <strong>
+                                    $150
+                                    <span>$200</span>
+                                </strong>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-img">
+                                <img src="../../Public/Images/feature-2.png" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <a href="#"class="feature-title">Group Travel Go To Bea Amsterdam</a>
+                                <h5>
+                                    <ion-icon name="star" class="rating-star"></ion-icon>
+                                    <p>8K+Rating</p>
+                                </h5>
+                                <strong>
+                                    $150
+                                    <span>$200</span>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-area">
+                <div class="container">
+                    <div class="blog-title">
+                        <div class="body-top">
+                            <h4>Latest Blog</h4>
+                            <h3 class="title">Stay Updated And New Post Our Blog</h3>
+                        </div>
+                    </div>
+                    <div class="blog-cards">
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="../../Public/Images/blog-1.png" alt="">
+                                <div class="blog-date">
+                                    <ion-icon name="calendar"></ion-icon>
+                                    1 April, 2021
+                                </div>
+                            </div>
+                            <div class="blog-details">
+                                <div class="blog-info">
+                                    <a href="#">
+                                        <ion-icon name="person-circle-outline"></ion-icon>
+                                        Dina Jems
+                                    </a>
+                                    <a href="#">
+                                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                                        Comments
+                                    </a>
+                                </div>
+                                <div class="blog-title">
+                                    <a href="#">Donec Egestas Orci Viverra Fermentum Risus.</a>
+                                </div>
+                                <div class="blog-btn">
+                                    <button class="btn-hero">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="../../Public/Images/blog-2.png" alt="">
+                                <div class="blog-date">
+                                    <ion-icon name="calendar"></ion-icon>
+                                    1 April, 2021
+                                </div>
+                            </div>
+                            <div class="blog-details">
+                                <div class="blog-info">
+                                    <a href="#">
+                                        <ion-icon name="person-circle-outline"></ion-icon>
+                                        Dina Jems
+                                    </a>
+                                    <a href="#">
+                                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                                        Comments
+                                    </a>
+                                </div>
+                                <div class="blog-title">
+                                    <a href="#">Donec Egestas Orci Viverra Fermentum Risus.</a>
+                                </div>
+                                <div class="blog-btn">
+                                    <button class="btn-hero">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="../../Public/Images/blog-3.png" alt="">
+                                <div class="blog-date">
+                                    <ion-icon name="calendar"></ion-icon>
+                                    1 April, 2021
+                                </div>
+                            </div>
+                            <div class="blog-details">
+                                <div class="blog-info">
+                                    <a href="#">
+                                        <ion-icon name="person-circle-outline"></ion-icon>
+                                        Dina Jems
+                                    </a>
+                                    <a href="#">
+                                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                                        Comments
+                                    </a>
+                                </div>
+                                <div class="blog-title">
+                                    <a href="#">Donec Egestas Orci Viverra Fermentum Risus.</a>
+                                </div>
+                                <div class="blog-btn">
+                                    <button class="btn-hero">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="footer"></section>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="../../Components/footer.js"></script>
+        <script type="module" src="./script.js"></script>
+        <script>
+            $(".slider-carousel").owlCarousel({
+              loop: true,
+              autoplay: false,
+              margin: 20,
+              width: 300,
+              autoplayTimeout: 2000,
+              autoplayHoverPause: true,
+              smartSpeed: 2500,
+              nav: true,
+              navText: ['<ion-icon class="nav-icon prev-icon" name="chevron-back-outline"></ion-icon>','<ion-icon class="nav-icon next-icon" name="chevron-forward-outline"></ion-icon>']
+            });
+
+            $(".slider-carousel-2").owlCarousel({
+              loop: true,
+              autoplay: false,
+              margin: 20,
+              width: 300,
+              autoplayTimeout: 2000,
+              autoplayHoverPause: true,
+              smartSpeed: 2500,
+              nav: true,
+              navText: ['<ion-icon class="nav-icon prev-icon" name="chevron-back-outline"></ion-icon>','<ion-icon class="nav-icon next-icon" name="chevron-forward-outline"></ion-icon>']
+            });
+
+            $(".review-slider").owlCarousel({
+              loop: true,
+              autoplay: false,
+              autoplayTimeout: 2000,
+              autoplayHoverPause: true,
+              smartSpeed: 2000,
+            });
+        </script>
+    </body>
+</html>
