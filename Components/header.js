@@ -36,7 +36,7 @@
     </div>
     <div class="other">
         <ion-icon name="search" class="other-icon"></ion-icon>
-        <ion-icon name="person-outline" class="other-icon"></ion-icon>
+        <ion-icon name="person-outline" class="other-icon" id="personIcon"></ion-icon>
         <ion-icon name="menu-outline" class="other-icon"></ion-icon>
     </div>
 </div>
@@ -96,9 +96,13 @@
 </div>`;
 
     const dropdownBox = document.querySelector('.dropdown-box');
-    const personIcon = document.querySelector('.other .other-icon:nth-child(2)');
-    personIcon.onclick = () => {
-        dropdownBox.classList.toggle('show');
+    const personIcon = document.querySelector('#personIcon');
+    document.onclick = (e) => {
+        if (e.target.id === 'personIcon') {
+            dropdownBox.classList.toggle('show');
+        } else {
+            dropdownBox.classList.remove('show');
+        }
     };
     const headerMiddle = header.querySelector('.header-middle');
     window.onscroll = () => {
