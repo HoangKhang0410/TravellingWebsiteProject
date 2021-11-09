@@ -43,7 +43,7 @@
 <div class="dropdown-box">
     <div class="dropdown-box-item">
         <ion-icon name="log-in" class="dropdown-box-icon"></ion-icon>
-        <p>Sign in</p>
+        <a href="../LoginPage/index.html">Sign in</a>
     </div>
     <div class="dropdown-box-item">
         <ion-icon name="person-circle" class="dropdown-box-icon"></ion-icon>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Sign In</title>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <form class="login-form">
+            <div class="left-panel">
+                <div class="slogan">
+                    <h2>We plan. You pack</h2>
+                    <p>Make your dream come true</p>
+                </div>
+                <div class="overlay-login-form"></div>
+            </div>
+            <div class="right-panel">
+                <img src="../../Public/Images/logo-2.png" alt="logo" class="logo" />
+                <div class="social">
+                    <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
+                    <ion-icon name="logo-google" class="social-icon"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="social-icon"></ion-icon>
+                </div>
+                <p>or use email account</p>
+                <div class="input">
+                    <input type="email" placeholder="Email" />
+                    <div class="error-message"></div>
+                    <input type="password" placeholder="Password" />
+                    <div class="error-message"></div>
+                    <p>Forgot your password?</p>
+                </div>
+                <button id="SignIn-button">Sign In</button>
+            </div>
+        </form>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="particles.min.js"></script>
+        <script src="app.js"></script>
+        <script type="module" src="./script.js"></script>
+    </body>
+</html>
