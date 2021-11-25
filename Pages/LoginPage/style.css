@@ -90,11 +90,24 @@ body {
     padding: 15px 10px;
     width: 100%;
     color: white;
-    margin-bottom: 20px;
+}
+
+.login-form .right-panel .input .error-message {
+    margin: 15px 0;
+    align-self: flex-start;
 }
 
 .login-form .right-panel .input p {
     align-self: flex-end;
+}
+
+.login-form .right-panel .input p a {
+    color: grey;
+    text-decoration: none;
+}
+
+.login-form .right-panel .input p a:hover {
+    text-decoration: underline;
 }
 
 .login-form .right-panel .social {
@@ -116,6 +129,11 @@ body {
     cursor: pointer;
     border-radius: 5px;
     text-transform: uppercase;
+    transition: all 0.2s linear;
+}
+
+.login-form .right-panel #SignIn-button:hover {
+    background-color: rgb(182, 63, 19);
 }
 
 .login-form .right-panel p,
