@@ -45,7 +45,7 @@ a {
   flex: 0 0 auto;
   width: 25%;
   position: relative;
-  height: 346px;
+  height: 90.6%;
   margin-top: 20px;
   display: flex;
 }
@@ -78,6 +78,7 @@ a {
   display: flex;
   padding: 0 5px;
   position: relative;
+  height: 100%;
 }
 .destination-row-right {
   display: flex;
@@ -85,10 +86,10 @@ a {
   position: relative;
 }
 .package-card {
-  margin: 20px 20px 20px 0;
+  margin: 20px 20px 0 0;
   box-shadow: none;
   border: 1px solid #eee;
-  width: 245px;
+  height: 428px;
 }
 .package-card .package-thumb {
   overflow: hidden;
@@ -99,7 +100,7 @@ a {
   display: block;
 }
 .package-card .package-details {
-  padding: 20px 15px;
+  padding: 30px 20px;
 }
 .package-card .package-details .package-info {
   display: flex;
@@ -110,17 +111,17 @@ a {
 .package-card .package-details .package-info h5 {
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 23px;
   color: #304f47;
 }
 .package-card .package-details .package-info h5 span {
-  font-size: 20px;
+  font-size: 22px;
 }
 .package-card .package-details h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 23px;
   line-height: 28px;
   color: #ff7f47;
   text-transform: capitalize;
@@ -128,7 +129,7 @@ a {
 }
 .package-card .package-details h3 ion-icon {
   color: #304f47;
-  font-size: 18px;
+  font-size: 22px;
 }
 .package-card .package-details h3 a {
   color: #ff7f47;
@@ -137,13 +138,13 @@ a {
   display: flex;
 }
 .package-card .package-details .package-rating ion-icon {
-  font-size: 16px;
+  font-size: 18px;
   color: #ff7f47;
   margin-right: 5px;
 }
 .package-card .package-details .package-rating strong {
   font-weight: 700;
-  font-size: 11px;
+  font-size: 14px;
   color: #304f47;
   display: flex;
   align-items: center;
@@ -171,7 +172,7 @@ a {
   margin: 0;
 }
 .destination-row .nav-icon.prev-icon {
-  left: -27%;
+  left: -26%;
 }
 .destination-row .nav-icon.next-icon {
   left: -12%;
@@ -180,5 +181,5 @@ a {
   right: -12%;
 }
 .destination-row-right .nav-icon.next-icon {
-  right: -27%;
+  right: -24%;
 }
