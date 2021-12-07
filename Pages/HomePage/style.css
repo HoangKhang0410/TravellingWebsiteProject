@@ -197,7 +197,7 @@ button.slide-controll:hover {
 .form-container .find-form {
   width: 65%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2.5rem;
   background-color: rgba(34, 77, 64, 0.9);
   border-radius: 15px;
 }
@@ -209,9 +209,9 @@ button.slide-controll:hover {
 }
 
 .col-form {
-  width: 22%;
+  width: 23%;
   max-width: 100%;
-  padding: 12px 7px;
+  padding: 15px 10px;
   background-color: #fff;
   border-radius: 7px;
 }
@@ -364,6 +364,7 @@ button.slide-controll:hover {
 }
 .destination-area .row {
   display: flex;
+  margin-bottom: 20px;
 }
 .destination-area .row .package-slider-wrap {
   flex: 0 0 auto;
@@ -372,6 +373,7 @@ button.slide-controll:hover {
   height: 346px;
   margin-top: 20px;
   display: flex;
+  height: 90.6%;
 }
 .destination-area .package-slider-wrap img {
   height: 100%;
@@ -402,6 +404,7 @@ button.slide-controll:hover {
   display: flex;
   padding: 0 5px;
   position: relative;
+  height: 100%;
 }
 .destination-area .destination-row-right {
   display: flex;
@@ -409,10 +412,10 @@ button.slide-controll:hover {
   position: relative;
 }
 .destination-area .package-card {
-  margin: 20px 20px 20px 0;
+  margin: 20px 20px 0 0;
   box-shadow: none;
   border: 1px solid #eee;
-  width: 245px;
+  height: 428px;
 }
 .destination-area .package-card .package-thumb {
   overflow: hidden;
@@ -423,7 +426,7 @@ button.slide-controll:hover {
   display: block;
 }
 .destination-area .package-card .package-details {
-  padding: 20px 15px;
+  padding: 30px 20px;
 }
 .destination-area .package-card .package-details .package-info {
   display: flex;
@@ -434,17 +437,17 @@ button.slide-controll:hover {
 .destination-area .package-card .package-details .package-info h5 {
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 23px;
   color: #304f47;
 }
 .destination-area .package-card .package-details .package-info h5 span {
-  font-size: 20px;
+  font-size: 22px;
 }
 .destination-area .package-card .package-details h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 23px;
   line-height: 28px;
   color: #ff7f47;
   text-transform: capitalize;
@@ -452,7 +455,7 @@ button.slide-controll:hover {
 }
 .destination-area .package-card .package-details h3 ion-icon {
   color: #304f47;
-  font-size: 18px;
+  font-size: 22px;
 }
 .destination-area .package-card .package-details h3 a {
   color: #ff7f47;
@@ -461,13 +464,13 @@ button.slide-controll:hover {
   display: flex;
 }
 .destination-area .package-card .package-details .package-rating ion-icon {
-  font-size: 16px;
+  font-size: 18px;
   color: #ff7f47;
   margin-right: 5px;
 }
 .destination-area .package-card .package-details .package-rating strong {
   font-weight: 700;
-  font-size: 11px;
+  font-size: 14px;
   color: #304f47;
   display: flex;
   align-items: center;
@@ -495,7 +498,7 @@ button.slide-controll:hover {
   margin: 0;
 }
 .destination-area .destination-row .nav-icon.prev-icon {
-  left: -27%;
+  left: -26%;
 }
 .destination-area .destination-row .nav-icon.next-icon {
   left: -12%;
@@ -504,7 +507,7 @@ button.slide-controll:hover {
   right: -12%;
 }
 .destination-area .destination-row-right .nav-icon.next-icon {
-  right: -27%;
+  right: -24%;
 }
 .achievement-area {
   padding: 80px 0;
@@ -653,7 +656,7 @@ button.slide-controll:hover {
   justify-content: space-between;
 }
 .feature-area .feature-cards .feature-card {
-  max-width: 500px;
+  max-width: 550px;
   display: flex;
   min-height: 200px;
   -webkit-box-shadow: 0 0 64px rgb(17 17 17 / 10%);
@@ -792,7 +795,7 @@ button.slide-controll:hover {
 .date-picker {
 	position: relative;
 	width: 100%;
-	height: 43px;
+	height: 50px;
 	background-color: #FFF;
 	margin: 0 auto;
 	cursor: pointer;
