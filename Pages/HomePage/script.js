@@ -76,7 +76,18 @@ const html = tours.map((tour, index) => {
 });
 bodyMiddle.innerHTML = html.join('');
 
-// header fix
+// header fix and dropdown box
+// dropdown box
+const dropdownBox = document.querySelector('.dropdown-box');
+  const personIcon = document.querySelector('#personIcon');
+  document.onclick = (e) => {
+    if (e.target.id === 'personIcon') {
+      dropdownBox.classList.toggle('show');
+    } else {
+      dropdownBox.classList.remove('show');
+    }
+  };
+// header fix scroll
 const header = document.querySelector('.header');
 const headerMiddle = header.querySelector('.header-middle');
 console.log(headerMiddle);

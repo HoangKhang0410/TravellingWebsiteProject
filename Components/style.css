@@ -20,6 +20,12 @@
     opacity: 1;
     transition: 0.5s linear;
 }
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
 /* header */
 .header {
     width: 100%;
@@ -79,7 +85,9 @@
     justify-content: space-around;
     position: relative;
 }
-
+.header-middle-navbar .category ul.nav-lists {
+    display: flex;
+}
 .header-middle-navbar .category a {
     font-size: 1.2rem;
     text-decoration: none;
@@ -87,7 +95,10 @@
     margin: 0 10px;
     transition: 0.3s ease-in-out;
 }
-
+.nav-side {
+    display: flex;
+    align-items: center;
+}
 .header-middle-navbar .category a:hover {
     color: orangered;
 }
@@ -95,6 +106,7 @@
 .header-middle-navbar .other {
     font-size: 1.5rem;
     color: orangered;
+    margin-left: 30px;
 }
 
 .header-middle-navbar .other .other-icon {
