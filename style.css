@@ -97,8 +97,10 @@ body {
     align-self: flex-start;
 }
 
-.login-form .right-panel .input p {
-    align-self: flex-end;
+.login-form .right-panel .input .forgot-or-signup {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .login-form .right-panel .input p a {
