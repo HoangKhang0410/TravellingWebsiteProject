@@ -31,7 +31,9 @@
                 <li class="nav-item-list"><a href="../HomePage/index.html">Home</a></li>
                 <li class="nav-item-list"><a href="../AboutPage/index.html">About Us</a></li>
                 <li class="nav-item-list"><a href="../DestinationPage/index.html">Destinations</a></li>
-                <li class="nav-item-list"><a href="../TourPage/index.html">Tour Package</a></li>
+                <li class="nav-item-list">
+                  <a href="../TourPage/index.html">Tour Package</a>              
+                </li>
                 <li class="nav-item-list"><a href="../BlogPage/index.html">Blogs</a></li>
                 <li class="nav-item-list"><a href="../GalleryPage/index.html">Gallery Pages</a></li>
                 <li class="nav-item-list"><a href="../ContactPage/index.html">Contact Us</a></li> 
