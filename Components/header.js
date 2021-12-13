@@ -1,7 +1,7 @@
 (function () {
-  const header = document.querySelector('.header');
+    const header = document.querySelector('.header');
 
-  header.innerHTML = `<div class="header-top">
+    header.innerHTML = `<div class="header-top">
 <div id="preloader">
     <img src="../../Public/Images/preloader.png" alt="preloader" class="preloader-icon">
 </div>
@@ -28,7 +28,7 @@
     <div class="nav-side">
         <div class="category">
             <ul class="nav-lists">
-                <li class="nav-item-list"><a href="../HomePage/index.html">Home</a></li>
+                <li class="nav-item-list"><a href="../../index.html">Home</a></li>
                 <li class="nav-item-list"><a href="../AboutPage/index.html">About Us</a></li>
                 <li class="nav-item-list"><a href="../DestinationPage/index.html">Destinations</a></li>
                 <li class="nav-item-list">
@@ -68,64 +68,64 @@
 <div class="header-bottom">
 <div class="title-panel">
     <h2 class="title">${
-      header.classList.contains('tour')
-        ? 'Tour Package'
-        : header.classList.contains('about')
-        ? 'About Us'
-        : header.classList.contains('destination')
-        ? 'Destinations'
-        : header.classList.contains('blog')
-        ? 'Blogs'
-        : header.classList.contains('page')
-        ? 'Pages'
-        : header.classList.contains('contact')
-        ? 'Contact Us'
-        : 'Others'
+        header.classList.contains('tour')
+            ? 'Tour Package'
+            : header.classList.contains('about')
+            ? 'About Us'
+            : header.classList.contains('destination')
+            ? 'Destinations'
+            : header.classList.contains('blog')
+            ? 'Blogs'
+            : header.classList.contains('page')
+            ? 'Pages'
+            : header.classList.contains('contact')
+            ? 'Contact Us'
+            : 'Others'
     }</h2>
     <h4 class="subtitle">Home <span>> ${
-      header.classList.contains('tour')
-        ? 'Tour Package'
-        : header.classList.contains('about')
-        ? 'About Us'
-        : header.classList.contains('destination')
-        ? 'Destinations'
-        : header.classList.contains('blog')
-        ? 'Blogs'
-        : header.classList.contains('page')
-        ? 'Pages'
-        : header.classList.contains('contact')
-        ? 'Contact Us'
-        : 'Others'
+        header.classList.contains('tour')
+            ? 'Tour Package'
+            : header.classList.contains('about')
+            ? 'About Us'
+            : header.classList.contains('destination')
+            ? 'Destinations'
+            : header.classList.contains('blog')
+            ? 'Blogs'
+            : header.classList.contains('page')
+            ? 'Pages'
+            : header.classList.contains('contact')
+            ? 'Contact Us'
+            : 'Others'
     }</span></h4>
 </div>
 <div class="overlay"></div>
 </div>`;
 
-  const dropdownBox = document.querySelector('.dropdown-box');
-  const personIcon = document.querySelector('#personIcon');
-  document.onclick = (e) => {
-    if (e.target.id === 'personIcon') {
-      dropdownBox.classList.toggle('show');
-    } else {
-      dropdownBox.classList.remove('show');
-    }
-  };
-  const headerMiddle = header.querySelector('.header-middle');
-  window.onscroll = () => {
-    if (window.scrollY !== 0) {
-      headerMiddle.classList.add('sticky');
-    } else {
-      headerMiddle.classList.remove('sticky');
-    }
-  };
+    const dropdownBox = document.querySelector('.dropdown-box');
+    const personIcon = document.querySelector('#personIcon');
+    document.onclick = (e) => {
+        if (e.target.id === 'personIcon') {
+            dropdownBox.classList.toggle('show');
+        } else {
+            dropdownBox.classList.remove('show');
+        }
+    };
+    const headerMiddle = header.querySelector('.header-middle');
+    window.onscroll = () => {
+        if (window.scrollY !== 0) {
+            headerMiddle.classList.add('sticky');
+        } else {
+            headerMiddle.classList.remove('sticky');
+        }
+    };
 })();
 
 (function () {
-  const preloader = document.querySelector('#preloader');
-  setTimeout(() => {
-    preloader.style.opacity = '0';
-  }, 2000);
-  setTimeout(() => {
-    preloader.style.display = 'none';
-  }, 2500);
+    const preloader = document.querySelector('#preloader');
+    setTimeout(() => {
+        preloader.style.opacity = '0';
+    }, 2000);
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 2500);
 })();

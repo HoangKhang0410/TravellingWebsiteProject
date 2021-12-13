@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-form {
+    display: flex;
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid transparent;
+}
+
+.login-form .left-panel,
+.login-form .right-panel {
+    width: 50%;
+    background-color: #161616;
+    color: white;
+}
+
+.login-form .left-panel {
+    background-image: url('../../Public/Images/left-panel-login.jfif');
+    border-radius: 20px 0 0 20px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.login-form .left-panel .slogan {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.login-form .left-panel .slogan h2 {
+    margin-bottom: 20px;
+}
+
+.login-form .left-panel .overlay-login-form {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.619);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.login-form .right-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 20px 20px 0;
+    padding: 0 25px;
+}
+
+.login-form .right-panel .logo,
+.login-form .right-panel .social,
+.login-form .right-panel .input,
+.login-form .right-panel p {
+    margin-bottom: 20px;
+}
+
+.login-form .right-panel .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form .right-panel .input input {
+    background-color: black;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    width: 100%;
+    color: white;
+}
+
+.login-form .right-panel .input .error-message {
+    margin: 15px 0;
+    align-self: flex-start;
+}
+
+.login-form .right-panel .input .forgot-or-signup {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login-form .right-panel .input p a {
+    color: grey;
+    text-decoration: none;
+}
+
+.login-form .right-panel .input p a:hover {
+    text-decoration: underline;
+}
+
+.login-form .right-panel .social {
+    margin-left: -20px;
+}
+
+.login-form .right-panel .social .social-icon {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.login-form .right-panel #SignIn-button {
+    background-color: orangered;
+    color: white;
+    font-weight: 300;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+}
+
+.login-form .right-panel #SignIn-button:hover {
+    background-color: rgb(182, 63, 19);
+}
+
+.login-form .right-panel p,
+.login-form .right-panel .input p {
+    color: grey;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Public/Images/background-login-page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
