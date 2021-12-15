@@ -17,18 +17,109 @@
     <body>
         <section class="header tour"></section>
         <section class="body">
-            <div class="body-top">
+            <div class="title-container">
                 <h4>Choose Your Package</h4>
                 <h3 class="title">Select Your Best Package For Your Travel</h3>
             </div>
-            <div class="body-middle"></div>
-            <div class="body-footer">
-                <button><</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>></button>
+            <div class="body-content">
+                <div class="body-left">
+                    <div class="body-top">
+                        <div class="body-top-text">
+                            <p>Showing 1-5 of 10 Result</p>
+                        </div>
+                        <div class="body-top-selection">
+                            <select>
+                                <option value="Package-1" selected>Package 1</option>
+                                <option value="Package-1">Package 2</option>
+                                <option value="Package-1">Package 3</option>
+                                <option value="Package-1">Package 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="body-middle"></div>
+                    <div class="body-footer">
+                        <button><</button>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>></button>
+                    </div>
+                </div>
+                <div class="body-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search Tour..." id="search-input" />
+                        <button id="search-btn"><ion-icon name="paper-plane-outline"></ion-icon></button>
+                    </div>
+                    <div class="price-box">
+                        <h5>Price Range</h5>
+                        <div class="dual-range" data-min="20" data-max="1000" data-step="1">
+                            <div class="slide">
+                                <span class="thumb thumbMin" style="--left: 0%" data-value="20"></span>
+                                <span class="thumb thumbMax" style="--left: 100%" data-value="1000"></span>
+                            </div>
+                            <input type="range" id="rangeMin" max="1000" min="20" step="1" value="20" />
+                            <input type="range" id="rangeMax" max="1000" min="20" step="1" value="1000" />
+                        </div>
+                    </div>
+                    <div class="duration-box">
+                        <h5>Durations</h5>
+                        <div class="time">
+                            <div class="single-option">
+                                <input type="radio" id="duration1" />
+                                <label for="duration1">0 - 24 Hour</label>
+                            </div>
+                            <div class="single-option">
+                                <input type="radio" id="duration2" />
+                                <label for="duration2">1 - 2 Days</label>
+                            </div>
+                            <div class="single-option">
+                                <input type="radio" id="duration3" />
+                                <label for="duration3">2 - 3 Days</label>
+                            </div>
+                            <div class="single-option">
+                                <input type="radio" id="duration4" />
+                                <label for="duration4">3 - 4 Days</label>
+                            </div>
+                            <div class="single-option">
+                                <input type="radio" id="duration5" />
+                                <label for="duration5">5 - 6 Days</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories-box">
+                        <h5>Categories</h5>
+                        <div class="categories-container">
+                            <div class="single-option">
+                                <input type="radio" id="category1" />
+                                <label for="category1">Adventure Tour</label>
+                            </div>
+                            <div class="single-option">
+                                <input type="radio" id="category2" />
+                                <label for="category2">City Tour</label>
+                            </div>
+                            <div class="single-option">
+                                <input type="radio" id="category3" />
+                                <label for="category3">Group Tour</label>
+                            </div>
+                            <div class="single-option">
+                                <input type="radio" id="category5" />
+                                <label for="category5">Couple Tour</label>
+                            </div>
+                            <div class="single-option">
+                                <input type="radio" id="category6" />
+                                <label for="category6">Village Tour</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-banner">
+                        <img src="../../Public/Images/sidebar-banner.png" alt="sidebar-banner" />
+                        <div class="sidebar-banner-content">
+                            <p>Get 50% Off In Dubai Tour</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="footer"></section>

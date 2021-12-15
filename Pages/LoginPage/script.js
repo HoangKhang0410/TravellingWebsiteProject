@@ -14,6 +14,6 @@ signInButton.onclick = (e) => {
         errorMessage.textContent = 'Mật khẩu không chính xác';
         passwordInput.focus();
     } else {
-        window.location = 'http://127.0.0.1:5500/Pages/HomePage/index.html';
+        window.location = 'http://127.0.0.1:5500/index.html';
     }
 };
