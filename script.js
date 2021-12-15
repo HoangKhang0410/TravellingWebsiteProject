@@ -7,51 +7,49 @@ let prevBtn = document.querySelector('.slide-prev');
 console.log(slides);
 
 const hideAllSlide = () => {
-  slides.forEach((e) => {
-    e.classList.remove('active');
-  });
+    slides.forEach((e) => {
+        e.classList.remove('active');
+    });
 };
 
 const showSlide = () => {
-  hideAllSlide();
-  slides[slide_index].classList.add('active');
+    hideAllSlide();
+    slides[slide_index].classList.add('active');
 };
 
-const nextSlide = () =>
-  (slide_index = slide_index + 1 === slides.length ? 0 : slide_index + 1);
+const nextSlide = () => (slide_index = slide_index + 1 === slides.length ? 0 : slide_index + 1);
 
-const prevSlide = () =>
-  (slide_index = slide_index - 1 < 0 ? slides.length - 1 : slide_index - 1);
+const prevSlide = () => (slide_index = slide_index - 1 < 0 ? slides.length - 1 : slide_index - 1);
 
 slider.addEventListener('mouseover', () => (slide_play = false));
 slider.addEventListener('mouseleave', () => (slide_play = true));
 
 nextBtn.addEventListener('click', () => {
-  nextSlide();
-  showSlide();
+    nextSlide();
+    showSlide();
 });
 
 prevBtn.addEventListener('click', () => {
-  prevSlide();
-  showSlide();
+    prevSlide();
+    showSlide();
 });
 
 showSlide();
 
 setInterval(() => {
-  if (!slide_play) return;
-  nextSlide();
-  showSlide();
+    if (!slide_play) return;
+    nextSlide();
+    showSlide();
 }, 3000);
 
-import { tours } from '../../Public/data.js';
+import { tours } from './Public/data.js';
 const breakPoint = 5;
 
 const bodyMiddle = document.querySelector('.body-middle');
 
 const html = tours.map((tour, index) => {
-  if (index > breakPoint) return;
-  return ` <div class="item">
+    if (index > breakPoint) return;
+    return ` <div class="item">
     <div class="item-top">
         <img src=${tour.image} alt="item${tour.id}" />
     </div>
@@ -79,55 +77,49 @@ bodyMiddle.innerHTML = html.join('');
 // header fix and dropdown box
 // dropdown box
 const dropdownBox = document.querySelector('.dropdown-box');
-  const personIcon = document.querySelector('#personIcon');
-  document.onclick = (e) => {
+const personIcon = document.querySelector('#personIcon');
+document.onclick = (e) => {
     if (e.target.id === 'personIcon') {
-      dropdownBox.classList.toggle('show');
+        dropdownBox.classList.toggle('show');
     } else {
-      dropdownBox.classList.remove('show');
+        dropdownBox.classList.remove('show');
     }
-  };
+};
 // header fix scroll
 const header = document.querySelector('.header');
 const headerMiddle = header.querySelector('.header-middle');
 console.log(headerMiddle);
 window.onscroll = () => {
-  if (window.scrollY !== 0) {
-    headerMiddle.classList.add('sticky');
-  } else {
-    headerMiddle.classList.remove('sticky');
-  }
+    if (window.scrollY !== 0) {
+        headerMiddle.classList.add('sticky');
+    } else {
+        headerMiddle.classList.remove('sticky');
+    }
 };
 
 // data picker
 
 const date_picker_element = document.querySelector('.date-picker');
-const selected_date_element = document.querySelector(
-  '.date-picker .selected-date'
-);
+const selected_date_element = document.querySelector('.date-picker .selected-date');
 const dates_element = document.querySelector('.date-picker .dates');
 const mth_element = document.querySelector('.date-picker .dates .month .mth');
-const next_mth_element = document.querySelector(
-  '.date-picker .dates .month .next-mth'
-);
-const prev_mth_element = document.querySelector(
-  '.date-picker .dates .month .prev-mth'
-);
+const next_mth_element = document.querySelector('.date-picker .dates .month .next-mth');
+const prev_mth_element = document.querySelector('.date-picker .dates .month .prev-mth');
 const days_element = document.querySelector('.date-picker .dates .days');
 
 const months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
 ];
 
 let date = new Date();
@@ -154,92 +146,97 @@ prev_mth_element.addEventListener('click', goToPrevMonth);
 
 // FUNCTIONS
 function toggleDatePicker(e) {
-  if (!checkEventPathForClass(e.path, 'dates')) {
-    dates_element.classList.toggle('active');
-  }
+    if (!checkEventPathForClass(e.path, 'dates')) {
+        dates_element.classList.toggle('active');
+    }
 }
 
 function goToNextMonth(e) {
-  month++;
-  if (month > 11) {
-    month = 0;
-    year++;
-  }
-  mth_element.textContent = months[month] + ' ' + year;
-  populateDates();
+    month++;
+    if (month > 11) {
+        month = 0;
+        year++;
+    }
+    mth_element.textContent = months[month] + ' ' + year;
+    populateDates();
 }
 
 function goToPrevMonth(e) {
-  month--;
-  if (month < 0) {
-    month = 11;
-    year--;
-  }
-  mth_element.textContent = months[month] + ' ' + year;
-  populateDates();
+    month--;
+    if (month < 0) {
+        month = 11;
+        year--;
+    }
+    mth_element.textContent = months[month] + ' ' + year;
+    populateDates();
 }
 
 function populateDates(e) {
-  days_element.innerHTML = '';
-  let amount_days = 31;
+    days_element.innerHTML = '';
+    let amount_days = 31;
 
-  if (month == 1) {
-    amount_days = 28;
-  }
-
-  for (let i = 0; i < amount_days; i++) {
-    const day_element = document.createElement('div');
-    day_element.classList.add('day');
-    day_element.textContent = i + 1;
-
-    if (
-      selectedDay == i + 1 &&
-      selectedYear == year &&
-      selectedMonth == month
-    ) {
-      day_element.classList.add('selected');
+    if (month == 1) {
+        amount_days = 28;
     }
 
-    day_element.addEventListener('click', function () {
-      selectedDate = new Date(year + '-' + (month + 1) + '-' + (i + 1));
-      selectedDay = i + 1;
-      selectedMonth = month;
-      selectedYear = year;
+    for (let i = 0; i < amount_days; i++) {
+        const day_element = document.createElement('div');
+        day_element.classList.add('day');
+        day_element.textContent = i + 1;
 
-      selected_date_element.textContent = formatDate(selectedDate);
-      selected_date_element.dataset.value = selectedDate;
+        if (selectedDay == i + 1 && selectedYear == year && selectedMonth == month) {
+            day_element.classList.add('selected');
+        }
 
-      populateDates();
-    });
+        day_element.addEventListener('click', function () {
+            selectedDate = new Date(year + '-' + (month + 1) + '-' + (i + 1));
+            selectedDay = i + 1;
+            selectedMonth = month;
+            selectedYear = year;
 
-    days_element.appendChild(day_element);
-  }
+            selected_date_element.textContent = formatDate(selectedDate);
+            selected_date_element.dataset.value = selectedDate;
+
+            populateDates();
+        });
+
+        days_element.appendChild(day_element);
+    }
 }
 
 // HELPER FUNCTIONS
 function checkEventPathForClass(path, selector) {
-  for (let i = 0; i < path.length; i++) {
-    if (path[i].classList && path[i].classList.contains(selector)) {
-      return true;
+    for (let i = 0; i < path.length; i++) {
+        if (path[i].classList && path[i].classList.contains(selector)) {
+            return true;
+        }
     }
-  }
 
-  return false;
+    return false;
 }
 function formatDate(d) {
-  let day = d.getDate();
-  if (day < 10) {
-    day = '0' + day;
-  }
+    let day = d.getDate();
+    if (day < 10) {
+        day = '0' + day;
+    }
 
-  let month = d.getMonth() + 1;
-  if (month < 10) {
-    month = '0' + month;
-  }
+    let month = d.getMonth() + 1;
+    if (month < 10) {
+        month = '0' + month;
+    }
 
-  let year = d.getFullYear();
+    let year = d.getFullYear();
 
-  return day + ' / ' + month + ' / ' + year;
+    return day + ' / ' + month + ' / ' + year;
 }
 
 // custom selected box
+(function () {
+    const preloader = document.querySelector('#preloader');
+    setTimeout(() => {
+        preloader.style.opacity = '0';
+    }, 2000);
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 2500);
+})();
