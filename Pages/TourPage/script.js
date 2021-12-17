@@ -22,7 +22,7 @@ searchBtn.onclick = () => {
     const minPrice = rangeMin.value;
     const newTours = tours.filter((tour) => {
         if (tour.price <= maxPrice && tour.price >= minPrice) {
-            return tour.name.includes(searchInput.value);
+            return tour.name.toLowerCase().includes(searchInput.value.toLowerCase());
         }
     });
 
