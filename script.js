@@ -51,7 +51,7 @@ const html = tours.map((tour, index) => {
     if (index > breakPoint) return;
     return ` <div class="item">
     <div class="item-top">
-        <img src=${tour.image} alt="item${tour.id}" />
+        <img src=".${tour.image.split('..')[2]}" alt="item${tour.id}" />
     </div>
     <div class="item-main">
         <div class="item-main-top">
