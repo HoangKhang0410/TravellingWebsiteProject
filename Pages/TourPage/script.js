@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     render(tours);
     handleInputRange();
     handleClick();
+    handleDirect();
 });
 
 searchBtn.onclick = () => {
@@ -113,5 +114,15 @@ const handleClick = () => {
             removeCheck('category');
             element.checked = true;
         });
+    });
+};
+
+const handleDirect = () => {
+    const tourPackages = document.querySelectorAll('.body .body-content .body-left .body-middle .item');
+    console.log(tourPackages);
+    tourPackages.forEach((item) => {
+        item.onclick = () => {
+            window.location = 'http://127.0.0.1:5500/Pages/PackageDetailsPage/index.html';
+        };
     });
 };
