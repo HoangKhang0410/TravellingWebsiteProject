@@ -84,13 +84,13 @@ a {
     margin-right: 15px;
 }
 .package-details .p-short-info .single-info .info-texts strong {
-    font-size: 18px;
+    font-size: 22px;
     font-family: sans-serif;
     font-weight: 600;
     color: #262339;
 }
 .package-details .p-short-info .single-info .info-texts p {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 20px;
 }
@@ -113,6 +113,8 @@ a {
     background-color: transparent;
     border-radius: 0.25rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .package-details .package-tab .nav button.nav-link:not(last-child) {
     margin-right: 20px;
@@ -122,7 +124,8 @@ a {
     color: #fff;
 }
 .package-details .package-tab .nav button.nav-link ion-icon {
-    font-size: 18px;
+    font-size: 22px;
+    margin-right: 5px;
 }
 .package-details .package-tab .tab-content {
     margin-top: 40px;
