@@ -106,9 +106,9 @@ a {
 }
 .package-details .package-tab .nav button.nav-link {
     border: 2px solid #ff7f47;
-    padding: 10px 25px;
+    padding: 15px 30px;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 20px;
     color: #262339;
     background-color: transparent;
     border-radius: 0.25rem;
@@ -126,6 +126,7 @@ a {
 }
 .package-details .package-tab .tab-content {
     margin-top: 40px;
+    width: 100%;
 }
 .tab-content>.tab-pane {
     display: none;
@@ -689,7 +690,13 @@ li.package-card-sm .package-info h5 span {
 .package-d-sidebar .p-sidebar-banner .sidebar-banner-overlay .sidebar-banner-btn a:hover {
     background: #304f47;
 }
-
+.tab-content-3 {
+    display: flex;
+    justify-content: space-between;
+}
+.left-panel {
+    padding-right: 15px;
+}
 .left-panel,
 .right-panel {
     width: calc(50% - var(--gap));
@@ -713,6 +720,7 @@ li.package-card-sm .package-info h5 span {
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    padding: 7px;
 }
 
 .left-panel .gallery-grid img:nth-child(3) {
