@@ -2,7 +2,9 @@ import { blogs } from '../../Public/data.js';
 const blogList = document.querySelector('.body .blog-list');
 
 const html = blogs.map((blog) => {
-    return `<div class="blog-item">
+    return `<div class="blog-item" data-aos="zoom-in-up"
+    data-aos-easing="ease-out"
+    data-aos-duration="1500">
     <div class="blog-item-top">
         <img src=${blog.image} alt="b-1.png" />
     </div>
