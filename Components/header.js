@@ -53,7 +53,7 @@
     </div>
     <div class="dropdown-box-item">
         <ion-icon name="person-circle" class="dropdown-box-icon"></ion-icon>
-        <a href="../LoginPage/index.html">Sign in</a>
+        <a href="../RegisterPage/index.html">Sign Up</a>
     </div>
     <div class="dropdown-box-item">
         <ion-icon name="settings" class="dropdown-box-icon"></ion-icon>
@@ -61,7 +61,7 @@
     </div>
     <div class="dropdown-box-item">
         <ion-icon name="log-out" class="dropdown-box-icon"></ion-icon>
-        <p>Log Out</p>
+        <a href="../LoginPage/index.html">Log Out</a>
     </div>
 </div>
 </div>
