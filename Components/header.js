@@ -80,6 +80,8 @@
             ? 'Gallery'
             : header.classList.contains('contact')
             ? 'Contact Us'
+            : header.classList.contains('detail')
+            ? 'Package Details'
             : 'Others'
     }</h2>
     <h4 class="subtitle">Home <span>> ${
@@ -95,6 +97,8 @@
             ? 'Gallery'
             : header.classList.contains('contact')
             ? 'Contact Us'
+            : header.classList.contains('detail')
+            ? 'Package Details'
             : 'Others'
     }</span></h4>
 </div>
