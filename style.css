@@ -32,7 +32,7 @@ ul {
 }
 .hero {
     width: 100%;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
 }
 .slider,
 .slider .container {
@@ -719,6 +719,7 @@ button.slide-controll:hover {
     font-size: 18px;
     text-decoration: line-through;
 }
+
 .blog-area .container {
     width: 90%;
     margin: 0 auto;

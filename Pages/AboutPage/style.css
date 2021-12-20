@@ -1,396 +1,394 @@
 ul {
-  list-style: none;
+    list-style: none;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 .about-wrapper {
-  margin-top: 120px;
-  padding-bottom: 100px;
-  line-height: 1.5;
-  color: #212529;
+    margin-top: 120px;
+    padding-bottom: 100px;
+    line-height: 1.5;
+    color: #212529;
 }
 .about-wrapper .container {
-  max-width: 85%;
-  margin: auto;
+    max-width: 85%;
+    margin: auto;
 }
 .about-wrapper .container .about-row {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 .about-wrapper .container .about-row .about-wrapper-left {
-  width: 58%;
-  padding: 0 15px;
+    width: 58%;
+    padding: 0 15px;
 }
 .about-wrapper .container .about-row .about-wrapper-right {
-  width: 42%;
-  padding: 0 15px;
-  text-align: left;
-  margin: 0;
+    width: 42%;
+    padding: 0 15px;
+    text-align: left;
+    margin: 0;
 }
 .about-wrapper-left .about-img-1 {
-  display: inline-block;
-  margin-bottom: 10px;
-  float: right;
-  border: 10px solid rgba(48, 79, 71, 0.1);
-  margin-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    float: right;
+    border: 10px solid rgba(48, 79, 71, 0.1);
+    margin-bottom: 10px;
 }
 .about-wrapper-left .about-img-1 img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 .about-wrapper-left .about-img-2 {
-  position: relative;
-  display: inline-block;
-  border: 10px solid rgba(48, 79, 71, 0.1);
+    position: relative;
+    display: inline-block;
+    border: 10px solid rgba(48, 79, 71, 0.1);
 }
 .about-row .about-wrapper-right h5 {
-  margin-bottom: 15px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #ff7f47;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ff7f47;
 }
 .about-row .about-wrapper-right h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 46px;
-  text-transform: capitalize;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    text-transform: capitalize;
 }
 .about-row .about-wrapper-right p {
-  margin: 25px 0;
-  font-size: 16;
-  line-height: 27px;
-  color: #737679;
-  letter-spacing: 1px;
+    margin: 25px 0;
+    font-size: 16;
+    line-height: 27px;
+    color: #737679;
+    letter-spacing: 1px;
 }
 .about-row .about-wrapper-right ul.about-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 .about-row .about-wrapper-right ul.about-list li {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: capitalize;
-  color: #262339;
-  margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #262339;
+    margin-bottom: 20px;
 }
 .about-row .about-wrapper-right ul.about-list li ion-icon {
-  margin-right: 5px;
-  font-size: 1.3rem;
+    margin-right: 5px;
+    font-size: 1.3rem;
 }
 .btn-hero {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #363b34;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 1rem;
-  color: #fff;
-  position: relative;
-  cursor: pointer;
-  transition: 0.4s;
-  z-index: 1;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #363b34;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+    z-index: 1;
 }
 .btn-hero:before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background-color: #ff7f47;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 5px;
-  clip-path: circle(27% at -3% 50%);
-  transition: all 0.3s ease-in;
-  z-index: -1;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #ff7f47;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    clip-path: circle(27% at -3% 50%);
+    transition: all 0.3s ease-in;
+    z-index: -1;
 }
 .btn-hero:hover:before {
-  clip-path: circle(100%);
+    clip-path: circle(100%);
 }
 .guide-wrapper {
-  margin-top: 120px;
-  padding-bottom: 100px;
-  line-height: 1.5;
-  color: #212529;
+    margin-top: 120px;
+    padding-bottom: 100px;
+    line-height: 1.5;
+    color: #212529;
 }
 .guide-wrapper .guide-container {
-  max-width: 85%;
-  margin: auto;
+    max-width: 85%;
+    margin: auto;
 }
 .guide-wrapper .guide-container .guide-title {
-  width: 100%;
-  padding: 0 10px;
-  max-width: 516px;
+    width: 100%;
+    padding: 0 10px;
+    max-width: 516px;
 }
 .guide-wrapper .guide-container .guide-title .guide-title-head {
-  text-align: left;
-  margin: 0;
-  padding-bottom: 40px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 40px;
 }
 .guide-wrapper .guide-container .guide-title .guide-title-head h5 {
-  margin-bottom: 15px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #ff7f47;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ff7f47;
 }
 .guide-wrapper .guide-container .guide-title .guide-title-head h2 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 45px;
-  line-height: 46px;
-  text-transform: capitalize;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 46px;
+    text-transform: capitalize;
 }
 .guide-wrapper .guide-container .guide-slider {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 .guide-wrapper .guide-container .guide-slider .guide-card {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: all 0.4s ease;
-  border: 1px solid #f1f1f1;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid #f1f1f1;
 }
 .guide-slider .guide-card .guide-thumb {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .guide-slider .guide-card .guide-thumb img {
-  width: 100%;
+    width: 100%;
 }
 .guide-slider .guide-card .guide-thumb .guide-info {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  padding: 30px;
-  text-align: center;
-  background: #fff;
-  transition: all 0.4s ease;
-  transform: translateY(40%);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background: #fff;
+    transition: all 0.4s ease;
+    transform: translateY(40%);
 }
 .guide-container .guide-slider .guide-card:hover .guide-info {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 .guide-card .guide-info h3 {
-  font-weight: 700;
-  font-size: 25px;
-  text-transform: capitalize;
-  color: #262339;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #262339;
 }
 .guide-card .guide-info p {
-  font-size: 20px;
-  font-weight: 500;
-  color: #737679;
-  line-height: 27px;
-  margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #737679;
+    line-height: 27px;
+    margin-bottom: 0;
 }
 .guide-card .guide-info ul.guide-links {
-  margin-top: 35px;
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .guide-card .guide-info ul.guide-links li a {
-  margin-right: 20px;
-  font-size: 20px;
-  padding: 10px 10px 6px 10px;
-  background: hsla(0,0%,68.6%,.3);
-  border-radius: 10px;
-  color: #afafaf;
-  transition: all .3s;
-  display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 10px 10px 6px 10px;
+    background: hsla(0, 0%, 68.6%, 0.3);
+    border-radius: 10px;
+    color: #afafaf;
+    transition: all 0.3s;
+    display: inline;
 }
 .guide-card .guide-info ul.guide-links li a:hover {
-  background: #ff7f47;
-  color: #fff;
+    background: #ff7f47;
+    color: #fff;
 }
 .guide-slider .nav-icon {
-  position: absolute;
-  right: 0;
-  top: -20%;
-  padding: 3px;
-  font-size: 1.4rem;
-  border: 1px solid #ff7f47;
-  color: #ff7f47;
-  border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -20%;
+    padding: 3px;
+    font-size: 1.4rem;
+    border: 1px solid #ff7f47;
+    color: #ff7f47;
+    border-radius: 50%;
 }
 .guide-slider .nav-icon.prev-icon {
-  margin-right: 50px;
+    margin-right: 50px;
 }
 .body-top {
-  text-align: center;
-  max-width: 516px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+    text-align: center;
+    max-width: 516px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .body-top h4 {
-  color: #ff7f47;
-  font-size: 1.5rem;
-  font-weight: 500;
+    color: #ff7f47;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .body-top .title {
-  font-size: 2.5rem;
-  word-break: break-word;
-  margin-top: 10px;
+    font-size: 2.5rem;
+    word-break: break-word;
+    margin-top: 10px;
 }
 .achievement-area {
-  padding: 80px 0;
-  background: linear-gradient(
-      rgba(245, 245, 245, 0.2) 100%,
-      rgba(245, 245, 245, 0.2) 100%
-    ),
-    url('../../Public/Images/achiv-shape.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    padding: 80px 0;
+    background: linear-gradient(rgba(245, 245, 245, 0.2) 100%, rgba(245, 245, 245, 0.2) 100%),
+        url('../../Public/Images/achiv-shape.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .achievement-area .container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0 15px 50px 15px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px 50px 15px;
 }
 .achievement-area .container .achievement-cards {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 .achievement-area .achievement-cards .achievement-card {
-  padding: 30px 20px;
-  margin: 0 10px;
-  width: 23%;
-  text-align: center;
-  background: #304f47;
-  color: #fff;
-  box-shadow: 0 0 64px rgb(17 17 17 / 10%);
-  border-radius: 10px;
-  margin-top: 30px;
+    padding: 30px 20px;
+    margin: 0 10px;
+    width: 23%;
+    text-align: center;
+    background: #304f47;
+    color: #fff;
+    box-shadow: 0 0 64px rgb(17 17 17 / 10%);
+    border-radius: 10px;
+    margin-top: 30px;
 }
 .achievement-area .achievement-cards .achievement-card .achievement-icon {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 .achievement-area .achievement-cards .achievement-card .achievement-icon i {
-  font-size: 3rem;
-  color: #fff;
+    font-size: 3rem;
+    color: #fff;
 }
 .achievement-cards .achievement-card h3 {
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 38px;
-  color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #fff;
 }
 .review-area {
-  margin: 120px 0;
+    margin: 120px 0;
+    padding-bottom: 150px;
 }
 .review-area .container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0 1rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 .review-area .container .review-slider {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 .review-area .container .review-slider .review-card {
-  padding: 30px 25px;
-  margin: 20px 10px;
-  text-align: center;
-  -webkit-box-shadow: rgb(17 17 26 / 10%) 0 0 16px;
-  box-shadow: rgb(17 17 26 / 10%) 0 0 16px;
-  border-radius: 50px 50px 0 0;
+    padding: 30px 25px;
+    margin: 20px 10px;
+    text-align: center;
+    -webkit-box-shadow: rgb(17 17 26 / 10%) 0 0 16px;
+    box-shadow: rgb(17 17 26 / 10%) 0 0 16px;
+    border-radius: 50px 50px 0 0;
 }
 .review-area .review-slider .review-card .reviewer-img img {
-  height: 114px;
-  width: 114px;
-  border-radius: 50%;
-  border: 8px solid rgba(48, 79, 71, 0.1);
-  margin: 0 auto;
+    height: 114px;
+    width: 114px;
+    border-radius: 50%;
+    border: 8px solid rgba(48, 79, 71, 0.1);
+    margin: 0 auto;
 }
 .review-area .review-slider .review-card .reviewer-info h3 {
-  margin-top: 20px;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 29px;
-  text-transform: capitalize;
-  color: #262339;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: #262339;
 }
 .review-area .review-slider .review-card .reviewer-info h5 {
-  font-family: sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
-  text-transform: capitalize;
-  color: #a5a5a5;
-  margin: 10px 0 22px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #a5a5a5;
+    margin: 10px 0 22px;
 }
 .review-area .review-slider .review-card .reviewer-info p {
-  width: 90%;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 27px;
-  color: #737679;
-  font-family: sans-serif;
-  margin-bottom: 0;
-  letter-spacing: 2px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 27px;
+    color: #737679;
+    font-family: sans-serif;
+    margin-bottom: 0;
+    letter-spacing: 2px;
 }
 .review-area .review-slider .owl-dots {
-  text-align: center;
-  width: 100%;
+    text-align: center;
+    width: 100%;
 }
 .review-area .review-slider .owl-dots button.owl-dot {
-  height: 10px;
-  width: 25px;
-  background: #304f47;
-  transition: all 0.3s;
-  margin: 0 12.5px;
-  border-radius: 5px;
-  border: 0px solid rgb(255, 255, 255);
-  outline: none;
+    height: 10px;
+    width: 25px;
+    background: #304f47;
+    transition: all 0.3s;
+    margin: 0 12.5px;
+    border-radius: 5px;
+    border: 0px solid rgb(255, 255, 255);
+    outline: none;
 }
 .review-area .review-slider .owl-dots button.owl-dot:hover,
 .review-area .review-slider .owl-dots button.owl-dot.active {
-  height: 15px;
-  background: #ff7f47;
+    height: 15px;
+    background: #ff7f47;
 }
 .blog-area {
-  padding-bottom: 150px;
+    padding-bottom: 150px;
 }
 .blog-area .container {
-  width: 90%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
 .blog-area .container .blog-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .blog-area .container .blog-cards .blog-card {
-  margin-top: 30px;
-  box-shadow: 0 0 30px rgb(17 17 17 / 8%);
-  border-radius: 0 0 3px 3px;
-  width: 30%;
+    margin-top: 30px;
+    box-shadow: 0 0 30px rgb(17 17 17 / 8%);
+    border-radius: 0 0 3px 3px;
+    width: 30%;
 }
 .blog-area .blog-cards .blog-card .blog-img {
-  position: relative;
-  border-radius: 5px 5px 0 0;
-  overflow: hidden;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
 }
 .blog-area .blog-cards .blog-card .blog-img img {
-  width: 100%;
-  object-fit: cover;
-  transition: 0.2s linear;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
 }
 .blog-area .blog-cards .blog-card .blog-img img:hover {
     transform: scale(1.05);
