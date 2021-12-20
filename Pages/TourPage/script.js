@@ -124,7 +124,7 @@ const handleDirect = () => {
     console.log(tourPackages);
     tourPackages.forEach((item) => {
         item.onclick = () => {
-            window.location = 'http://127.0.0.1:5500/Pages/PackageDetailsPage/index.html';
+            location.href = '/Pages/PackageDetailsPage/index.html';
         };
     });
 };
