@@ -64,7 +64,9 @@ function handleInputRange() {
 
 const render = (tours) => {
     const html = tours.map((tour) => {
-        return ` <div class="item">
+        return ` <div class="item" data-aos="zoom-in-up"
+        data-aos-easing="ease-out"
+        data-aos-duration="1500">
         <div class="item-top">
             <img src=${tour.image} alt="item${tour.id}" />
         </div>

@@ -73,6 +73,8 @@ export const tours = [
     },
 ];
 
+localStorage.setItem('tourData', JSON.stringify(tours));
+
 export const galleryImage = [
     '../../Public/Images/gl-1.png',
     '../../Public/Images/gl-2.png',
