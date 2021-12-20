@@ -72,7 +72,7 @@ a {
 }
 
 .header-middle.sticky {
-  z-index: 900;
+  z-index: 10;
   position: fixed;
   top: 0;
   box-shadow: 0px 3px 3px rgb(168, 168, 168);
@@ -100,7 +100,7 @@ a {
   padding: 0;
   background: #f3f2f7;
   display: none;
-  z-index: 9999;
+  z-index: 11;
   transform: translateY(30px);
   transition: all 0.3s;
   border-top: 3px solid #ff7f47;
@@ -144,6 +144,7 @@ a {
   font-size: 1.5rem;
   color: orangered;
   margin-left: 30px;
+  display: flex;
 }
 
 .header-middle-navbar .other .other-icon {
