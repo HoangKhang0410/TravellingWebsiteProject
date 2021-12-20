@@ -17,6 +17,6 @@ signInButton.onclick = (e) => {
         errorMessage.textContent = 'Mật khẩu không khớp';
         rePasswordInput.focus();
     } else {
-        window.location = 'http://127.0.0.1:5500/index.html';
+        location.href = '../../index.html';
     }
 };
