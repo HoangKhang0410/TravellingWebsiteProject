@@ -1,9 +1,7 @@
-const navLinks = document.querySelectorAll('.nav-link');
-const tabPanes = document.querySelectorAll('.tab-pane');
 const packageDetails = document.querySelector('.package-details');
 
+
 const packageSelected = JSON.parse(localStorage.getItem('packageSelected'));
-console.log(packageSelected);
 
 packageDetails.innerHTML = `
 <div class="package-thumb-1">
@@ -558,6 +556,19 @@ packageDetails.innerHTML = `
     </div>
 </div>`;
 
+
+// galary page
+import { galleryImage } from '../../Public/data.js';
+const leftPanel = document.querySelector('.tab-content-3 .left-panel');
+const rightPanel = document.querySelector('.tab-content-3 .right-panel');
+const htmlWrapper = document.querySelector('html');
+
+window.addEventListener('DOMContentLoaded', () => {
+    renderContent(leftPanel);
+    renderContent(rightPanel);
+    handleImageClick();
+    const navLinks = document.querySelectorAll('.nav-link');
+const tabPanes = document.querySelectorAll('.tab-pane');
 navLinks.forEach((navItem, index) => {
     navItem.addEventListener('click', () => {
         showTabs(index);
@@ -574,17 +585,6 @@ function showTabs(id) {
     navLinks[id].classList.add('active');
     tabPanes[id].classList.add('show');
 }
-
-// galary page
-import { galleryImage } from '../../Public/data.js';
-const leftPanel = document.querySelector('.tab-content-3 .left-panel');
-const rightPanel = document.querySelector('.tab-content-3 .right-panel');
-const htmlWrapper = document.querySelector('html');
-
-window.addEventListener('DOMContentLoaded', () => {
-    renderContent(leftPanel);
-    renderContent(rightPanel);
-    handleImageClick();
 });
 
 const renderContent = (container) => {
