@@ -122,8 +122,9 @@ const handleClick = () => {
 const handleDirect = () => {
     const tourPackages = document.querySelectorAll('.body .body-content .body-left .body-middle .item');
     console.log(tourPackages);
-    tourPackages.forEach((item) => {
+    tourPackages.forEach((item, index) => {
         item.onclick = () => {
+            localStorage.setItem('packageSelected', JSON.stringify(tours[index]));
             location.href = '/Pages/PackageDetailsPage/index.html';
         };
     });
