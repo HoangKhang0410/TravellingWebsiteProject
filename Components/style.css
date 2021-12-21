@@ -279,6 +279,7 @@ a {
 .footer-main-top .column:nth-child(1) p {
     line-height: 2rem;
     margin: 10px 0;
+    color: white;
 }
 
 .footer-main-top .column:nth-child(1) h3 {
@@ -322,6 +323,7 @@ a {
 
 .footer-main-top .column:nth-child(2) .info .detail p {
     cursor: pointer;
+    color: white;
 }
 
 .footer-main-top .column:nth-child(3) h2 {
